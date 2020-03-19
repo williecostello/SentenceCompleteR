@@ -72,7 +72,7 @@ find_next <- function(input) {
         }
         
         ## Check to see that at least 1 completion has been found
-        if (nrow(allwords) != 0) {
+        if (nrow(allwords) == 0) {
                 stop("No predictions found.")
         }
         
